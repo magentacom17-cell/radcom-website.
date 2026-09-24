@@ -518,7 +518,7 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
                   <div className="text-[10px] font-bold">Faktur Pajak Resmi</div>
                 </div>
                 <div className="p-4 rounded-xl bg-slate-800 text-white text-center">
-                  <div className="text-2xl font-black text-cyan-400">360°</div>
+                  <div className="text-2xl font-black text-[#F5A623]">360°</div>
                   <div className="text-[10px] text-slate-300 font-medium">Cakupan Kebutuhan Kantor</div>
                 </div>
               </div>
@@ -840,8 +840,8 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
 
                 {/* International NGOs & Conservation */}
                 <div>
-                  <div className="text-[10px] font-black text-cyan-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                  <div className="text-[10px] font-black text-[#F5A623] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
                     <span>Organisasi Internasional, Konservasi & NGO</span>
                   </div>
                   <div className="grid grid-cols-4 gap-2">
@@ -855,8 +855,8 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
 
                 {/* Enterprises, Energy & Industrial */}
                 <div>
-                  <div className="text-[10px] font-black text-amber-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-300" />
+                  <div className="text-[10px] font-black text-[#F5A623] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
                     <span>Korporasi Multinasional, Industri & Migas</span>
                   </div>
                   <div className="grid grid-cols-4 gap-2">
@@ -870,8 +870,8 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
 
                 {/* Banking, Healthcare, Hospitality & Property */}
                 <div>
-                  <div className="text-[10px] font-black text-emerald-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  <div className="text-[10px] font-black text-[#F5A623] uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F5A623]" />
                     <span>Perbankan, Healthcare, Hospitality & Properti</span>
                   </div>
                   <div className="grid grid-cols-4 gap-2">
@@ -954,13 +954,13 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
 
             {/* Project 02: PT. Integrasi Jaringan Ekosistem (KAI) (Page 11 Bottom) */}
             <div className="p-6 rounded-2xl bg-white/10 border border-white/20 relative overflow-hidden">
-              <div className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider mb-1">
+              <div className="text-[10px] font-bold text-[#F5A623] uppercase tracking-wider mb-1">
                 PT. INTEGRASI JARINGAN EKOSISTEM · SHELTER KAI
               </div>
               <h3 className="text-base font-black text-white leading-tight mb-2">
                 PROJECT INSTALASI PEMASANGAN IP CAMERA CCTV & AKSES DOOR 8 SHELTER KAI
               </h3>
-              <p className="text-xs text-cyan-200 font-bold mb-3">
+              <p className="text-xs text-amber-200 font-bold mb-3">
                 Integrasi Pengawasan Perimeter & Access Control Stasiun / Shelter
               </p>
               
@@ -977,17 +977,17 @@ export const A4DocumentView: React.FC<A4DocumentViewProps> = ({ onBackToWeb }) =
                   <p>
                     Instalasi di 8 titik shelter vital Kereta Api Indonesia mencakup sistem penguncian magnetik otomatis, controller pintu, dan transmisi video jarak jauh.
                   </p>
-                  <span className="text-[9px] font-bold text-cyan-400">Status: Selesai & Beroperasi Penuh</span>
+                  <span className="text-[9px] font-bold text-[#F5A623]">Status: Selesai & Beroperasi Penuh</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-[10px] font-semibold text-slate-300">
                 <div className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-cyan-400" />
+                  <Check className="w-3.5 h-3.5 text-[#F5A623]" />
                   <span>Access Door 8 Shelter Tersebar</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-cyan-400" />
+                  <Check className="w-3.5 h-3.5 text-[#F5A623]" />
                   <span>IP Surveillance Outdoor Tahan Cuaca</span>
                 </div>
               </div>

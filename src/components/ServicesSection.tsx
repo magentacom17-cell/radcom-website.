@@ -27,14 +27,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
 
   const getIcon = (code: string) => {
     switch (code) {
-      case 'IT': return <Server className="w-5 h-5 text-cyan-400" />;
-      case 'CCTV': return <ShieldAlert className="w-5 h-5 text-cyan-400" />;
-      case 'OFF': return <Briefcase className="w-5 h-5 text-cyan-400" />;
-      case 'TON': return <Printer className="w-5 h-5 text-cyan-400" />;
-      case 'PRN': return <FileText className="w-5 h-5 text-cyan-400" />;
-      case 'CON': return <Building2 className="w-5 h-5 text-cyan-400" />;
-      case 'INF': return <Wrench className="w-5 h-5 text-cyan-400" />;
-      default: return <CheckCircle2 className="w-5 h-5 text-cyan-400" />;
+      case 'IT': return <Server className="w-5 h-5 text-[#F5A623]" />;
+      case 'CCTV': return <ShieldAlert className="w-5 h-5 text-[#F5A623]" />;
+      case 'OFF': return <Briefcase className="w-5 h-5 text-[#F5A623]" />;
+      case 'TON': return <Printer className="w-5 h-5 text-[#F5A623]" />;
+      case 'PRN': return <FileText className="w-5 h-5 text-[#F5A623]" />;
+      case 'CON': return <Building2 className="w-5 h-5 text-[#F5A623]" />;
+      case 'INF': return <Wrench className="w-5 h-5 text-[#F5A623]" />;
+      default: return <CheckCircle2 className="w-5 h-5 text-[#F5A623]" />;
     }
   };
 
@@ -45,8 +45,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-              <span className="w-6 h-0.5 bg-cyan-400"></span>
+            <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+              <span className="w-6 h-0.5 bg-[#F5A623]"></span>
               04 · Line of Business
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -65,7 +65,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
               placeholder="Cari komoditas / layanan..."
               value={filterQuery}
               onChange={(e) => setFilterQuery(e.target.value)}
-              className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors"
+              className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#F5A623] transition-colors"
             />
           </div>
         </div>
@@ -80,18 +80,18 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 onClick={() => setSelectedId(service.id)}
                 className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between min-h-[110px] ${
                   isSelected
-                    ? 'bg-cyan-950/80 border-cyan-400 shadow-lg shadow-cyan-500/10 -translate-y-1'
+                    ? 'bg-amber-950/70 border-[#F5A623] shadow-lg shadow-amber-500/10 -translate-y-1'
                     : 'bg-slate-900/80 border-slate-800 hover:border-slate-700 hover:bg-slate-900'
                 }`}
               >
                 <div className="flex items-center justify-between w-full mb-2">
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-                    isSelected ? 'bg-cyan-500/20 text-cyan-300' : 'bg-slate-800 text-slate-400'
+                    isSelected ? 'bg-amber-500/20 text-amber-300' : 'bg-slate-800 text-slate-400'
                   }`}>
                     {getIcon(service.code)}
                   </div>
                   <span className={`text-[10px] font-black tracking-wider ${
-                    isSelected ? 'text-cyan-400' : 'text-slate-500'
+                    isSelected ? 'text-[#F5A623]' : 'text-slate-500'
                   }`}>
                     {service.code}
                   </span>
@@ -115,7 +115,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             {/* Left Info & Items */}
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
-                <span className="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold">
+                <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold">
                   {activeService.code} · {activeService.highlight}
                 </span>
               </div>
@@ -137,7 +137,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {activeService.items.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800/80 text-xs text-slate-200">
-                      <Check className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
+                      <Check className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -148,7 +148,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
               <div className="pt-4 flex flex-wrap items-center gap-4">
                 <button
                   onClick={() => onSelectServiceForRfq(activeService.title)}
-                  className="px-5 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs hover:bg-cyan-400 transition-all flex items-center gap-2 cursor-pointer shadow-md"
+                  className="px-5 py-3 rounded-xl bg-[#F5A623] text-slate-950 font-bold text-xs hover:bg-amber-400 transition-all flex items-center gap-2 cursor-pointer shadow-md"
                 >
                   <span>Minta Penawaran untuk {activeService.title}</span>
                   <ArrowUpRight className="w-4 h-4" />
@@ -166,7 +166,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-6">
                   <div>
-                    <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest block mb-1">
+                    <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest block mb-1">
                       Katalog Resmi Radcom
                     </span>
                     <h4 className="text-white text-base font-bold">
@@ -184,14 +184,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         </div>
 
         {/* Bottom Banner Quote */}
-        <div className="p-6 rounded-2xl bg-gradient-to-r from-slate-900 to-cyan-950/60 border border-cyan-500/20 flex items-center justify-between flex-wrap gap-4">
+        <div className="p-6 rounded-2xl bg-gradient-to-r from-slate-900 to-amber-950/50 border border-amber-500/20 flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
+            <div className="w-2.5 h-2.5 rounded-full bg-[#F5A623] animate-pulse" />
             <p className="text-sm font-semibold text-slate-200">
               Satu partner untuk menghubungkan seluruh kebutuhan pengadaan dengan solusi tepat, cepat, dan bergaransi.
             </p>
           </div>
-          <span className="text-xs font-bold text-cyan-400">
+          <span className="text-xs font-bold text-[#F5A623]">
             RADCOM · Solusi Korporasi & Pemerintahan
           </span>
         </div>

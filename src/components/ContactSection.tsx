@@ -17,8 +17,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         
         {/* Header */}
         <div>
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-            <span className="w-6 h-0.5 bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+            <span className="w-6 h-0.5 bg-[#F5A623]"></span>
             07 · Hubungi Kami
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
@@ -35,20 +35,20 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
           {/* Main Info Box */}
           <div className="lg:col-span-7 bg-slate-900/90 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl space-y-8">
             <h3 className="text-xl font-bold text-white flex items-center gap-3">
-              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#F5A623]" />
               <span>Informasi Kontak Resmi Perusahaan</span>
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Phone */}
               <div className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
-                <div className="flex items-center gap-2.5 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">
+                <div className="flex items-center gap-2.5 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
                   <Phone className="w-4 h-4" />
                   <span>Telepon Kantor</span>
                 </div>
                 <a 
                   href={`tel:${companyInfo.phone.replace(/[^0-9]/g, '')}`}
-                  className="text-base font-bold text-white hover:text-cyan-300 transition-colors"
+                  className="text-base font-bold text-white hover:text-amber-300 transition-colors"
                 >
                   {companyInfo.phone}
                 </a>
@@ -77,13 +77,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
               {/* Email */}
               <div className="p-4 rounded-2xl bg-slate-950/70 border border-slate-800">
-                <div className="flex items-center gap-2.5 text-sky-400 text-xs font-bold uppercase tracking-wider mb-2">
+                <div className="flex items-center gap-2.5 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
                   <Mail className="w-4 h-4" />
                   <span>Email Korespondensi</span>
                 </div>
                 <a 
                   href={`mailto:${companyInfo.email}`}
-                  className="text-base font-bold text-white hover:text-sky-300 transition-colors break-all"
+                  className="text-base font-bold text-white hover:text-amber-300 transition-colors break-all"
                 >
                   {companyInfo.email}
                 </a>
@@ -105,11 +105,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
             {/* Address */}
             <div className="p-5 rounded-2xl bg-slate-950/70 border border-slate-800 flex items-start gap-4">
-              <div className="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 flex-shrink-0">
+              <div className="p-2.5 rounded-xl bg-amber-500/10 text-[#F5A623] flex-shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider block">Alamat Kantor</span>
+                <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">Alamat Kantor</span>
                 <p className="text-sm font-semibold text-white mt-1">
                   {companyInfo.address}, {companyInfo.area}, {companyInfo.city} {companyInfo.postalCode}
                 </p>
@@ -123,7 +123,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="flex flex-wrap gap-4 pt-2">
               <button
                 onClick={onOpenRfq}
-                className="px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs hover:bg-cyan-400 transition-all flex items-center gap-2 cursor-pointer shadow-lg shadow-cyan-500/20"
+                className="px-6 py-3 rounded-xl bg-[#F5A623] text-slate-950 font-bold text-xs hover:bg-amber-400 transition-all flex items-center gap-2 cursor-pointer shadow-lg shadow-amber-500/20"
               >
                 <span>Formulir Permintaan Penawaran</span>
                 <ArrowRight className="w-4 h-4" />
@@ -140,8 +140,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
           {/* Right Partnership Pitch */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-cyan-950/60 via-slate-900 to-slate-950 border border-cyan-500/30 shadow-2xl space-y-5">
-              <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">KEMITRAAN KORPORAT</span>
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-amber-950/40 via-slate-900 to-slate-950 border border-amber-500/30 shadow-2xl space-y-5">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">KEMITRAAN KORPORAT</span>
               <h4 className="text-2xl font-black text-white leading-snug">
                 Butuh partner terpercaya untuk kebutuhan pengadaan perusahaan?
               </h4>
@@ -151,15 +151,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
               <div className="space-y-3 pt-2 text-xs text-slate-300">
                 <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                  <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-[#F5A623] flex-shrink-0" />
                   <span>Jaminan Legalitas & Surat Dukungan Pabrikan (Dealer Resmi)</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                  <Clock className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <Clock className="w-4 h-4 text-[#F5A623] flex-shrink-0" />
                   <span>Pengiriman Tepat Waktu dengan Tim Lapangan Berpengalaman</span>
                 </div>
                 <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                  <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                  <ShieldCheck className="w-4 h-4 text-[#F5A623] flex-shrink-0" />
                   <span>Layanan Garansi & Purna Jual Resmi Komprehensif</span>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 space-y-2">
               <div className="flex items-center justify-between text-slate-300 font-semibold">
                 <span>Jam Kerja Kantor:</span>
-                <span className="text-cyan-400">Senin - Jumat | 08.30 - 17.00 WIB</span>
+                <span className="text-[#F5A623]">Senin - Jumat | 08.30 - 17.00 WIB</span>
               </div>
               <p>
                 Permintaan konsultasi via WhatsApp dilayani pada jam operasional dan emergency support tersedia bagi rekanan kontrak pemeliharaan (SLA).
@@ -182,9 +182,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         {/* Section 08 Back Cover & Footer */}
         <div className="pt-16 border-t border-slate-800 text-center space-y-6">
           <div className="text-3xl font-black tracking-wider text-white">
-            RAD<span className="text-cyan-400">COM</span>
+            RAD<span className="text-[#F5A623]">COM</span>
           </div>
-          <div className="w-16 h-1 bg-cyan-400 mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#F5A623] mx-auto rounded-full" />
           <h3 className="text-2xl sm:text-3xl font-black text-white">
             One Partner. Many Solutions.
           </h3>

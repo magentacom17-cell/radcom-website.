@@ -1,0 +1,9 @@
+<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='100' height='100' rx='18' fill='#FFFFFF'/>
+  <rect x='24' y='22' width='52' height='36' rx='6' stroke='#1E293B' stroke-width='3.5' fill='none'/>
+  <rect x='34' y='30' width='32' height='20' rx='3' fill='#EA580C'/>
+  <line x1='38' y1='58' x2='38' y2='66' stroke='#1E293B' stroke-width='3.5'/>
+  <line x1='62' y1='58' x2='62' y2='66' stroke='#1E293B' stroke-width='3.5'/>
+  <line x1='28' y1='66' x2='72' y2='66' stroke='#1E293B' stroke-width='3.5'/>
+  <text x='50' y='80' text-anchor='middle' font-size='8.5' font-weight='900' fill='#0F172A' font-family='system-ui, sans-serif'>INTRACAWIND</text>
+</svg>

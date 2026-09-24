@@ -1,0 +1,6 @@
+<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='100' height='100' rx='18' fill='#0F172A'/>
+  <polygon points='50,18 78,34 78,66 50,82 22,66 22,34' fill='#1E293B' stroke='#EA580C' stroke-width='2.5'/>
+  <text x='50' y='55' text-anchor='middle' font-size='18' font-weight='900' fill='#FFFFFF' font-family='system-ui, sans-serif' letter-spacing='1'>FABS</text>
+  <text x='50' y='72' text-anchor='middle' font-size='6' font-weight='700' fill='#FB923C' font-family='system-ui, sans-serif' letter-spacing='1'>INDONESIA</text>
+</svg>

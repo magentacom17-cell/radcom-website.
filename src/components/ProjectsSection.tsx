@@ -16,8 +16,8 @@ export const ProjectsSection: React.FC = () => {
         
         {/* Section Header */}
         <div>
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-            <span className="w-6 h-0.5 bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+            <span className="w-6 h-0.5 bg-[#F5A623]"></span>
             05 · Project Experience
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -39,7 +39,7 @@ export const ProjectsSection: React.FC = () => {
               <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-800">
                 <div className="space-y-1.5">
                   <div className="flex items-center gap-2.5">
-                    <span className="px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-black tracking-widest uppercase">
+                    <span className="px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-black tracking-widest uppercase">
                       {project.number}
                     </span>
                     <span className="text-xs font-semibold text-slate-400">
@@ -49,13 +49,13 @@ export const ProjectsSection: React.FC = () => {
                   <h3 className="text-2xl sm:text-3xl font-black text-white">
                     {project.client}
                   </h3>
-                  <p className="text-cyan-300 font-semibold text-sm sm:text-base">
+                  <p className="text-amber-300 font-semibold text-sm sm:text-base">
                     {project.title}
                   </p>
                 </div>
 
                 <div className="px-4 py-2 rounded-xl bg-slate-900 border border-slate-700/80 text-xs text-slate-300 flex items-center gap-2 self-start lg:self-center">
-                  <Award className="w-4 h-4 text-cyan-400" />
+                  <Award className="w-4 h-4 text-[#F5A623]" />
                   <span>Verified Project Accomplishment</span>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export const ProjectsSection: React.FC = () => {
                   <div className="space-y-2">
                     {project.highlights.map((item, hidx) => (
                       <div key={hidx} className="flex items-start gap-2.5 text-xs text-slate-300">
-                        <CheckCircle className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -96,7 +96,7 @@ export const ProjectsSection: React.FC = () => {
                   {project.photos.map((photo, pidx) => (
                     <div 
                       key={pidx}
-                      className="group cursor-pointer rounded-xl overflow-hidden border border-slate-800 bg-slate-900 flex flex-col hover:border-cyan-500/50 transition-colors"
+                      className="group cursor-pointer rounded-xl overflow-hidden border border-slate-800 bg-slate-900 flex flex-col hover:border-amber-500/50 transition-colors"
                       onClick={() => setActivePhotoModal({
                         src: photo.localSrc || photo.fallbackUrl,
                         caption: photo.caption,
@@ -111,7 +111,7 @@ export const ProjectsSection: React.FC = () => {
                           className="w-full h-full"
                         />
                         <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <div className="p-2 rounded-full bg-cyan-500 text-slate-950 shadow-lg">
+                          <div className="p-2 rounded-full bg-[#F5A623] text-slate-950 shadow-lg">
                             <ZoomIn className="w-4 h-4" />
                           </div>
                         </div>
@@ -132,7 +132,7 @@ export const ProjectsSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-slate-950 border border-slate-800">
             <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-              <Shield className="w-4 h-4 text-cyan-400" />
+              <Shield className="w-4 h-4 text-[#F5A623]" />
               <span>Daftar Rekanan & Kredibilitas Resmi</span>
             </h4>
             <p className="text-xs text-slate-300 leading-relaxed">
@@ -142,7 +142,7 @@ export const ProjectsSection: React.FC = () => {
 
           <div className="p-6 rounded-2xl bg-slate-950 border border-slate-800">
             <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-              <Building className="w-4 h-4 text-cyan-400" />
+              <Building className="w-4 h-4 text-[#F5A623]" />
               <span>Fokus & Standar Pengadaan</span>
             </h4>
             <p className="text-xs text-slate-300 leading-relaxed">
@@ -159,7 +159,7 @@ export const ProjectsSection: React.FC = () => {
           <div className="relative max-w-3xl w-full bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
             <div className="p-4 border-b border-slate-800 flex items-center justify-between">
               <div>
-                <span className="text-xs text-cyan-400 font-bold block">{activePhotoModal.project}</span>
+                <span className="text-xs text-amber-400 font-bold block">{activePhotoModal.project}</span>
                 <h5 className="text-sm font-semibold text-white">{activePhotoModal.caption}</h5>
               </div>
               <button

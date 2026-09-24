@@ -81,7 +81,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
         {!submitted ? (
           <div>
             <div className="mb-6">
-              <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">
                 FORMULIR PERMINTAAN RESMI
               </span>
               <h3 className="text-2xl font-black text-white mt-1">
@@ -107,7 +107,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                       placeholder="Nama Anda"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#F5A623]"
                     />
                   </div>
                 </div>
@@ -125,7 +125,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                       placeholder="PT / CV / Lembaga"
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#F5A623]"
                     />
                   </div>
                 </div>
@@ -145,7 +145,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                       placeholder="nama@perusahaan.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#F5A623]"
                     />
                   </div>
                 </div>
@@ -163,7 +163,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                       placeholder="0812xxxxxxx"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#F5A623]"
                     />
                   </div>
                 </div>
@@ -178,7 +178,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                   <select
                     value={formData.serviceCategory}
                     onChange={(e) => setFormData({ ...formData, serviceCategory: e.target.value })}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#F5A623]"
                   >
                     {servicesData.map((s) => (
                       <option key={s.id} value={s.title}>
@@ -196,7 +196,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                   <select
                     value={formData.timeline}
                     onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#F5A623]"
                   >
                     <option value="Mendesak (< 1 Minggu)">Mendesak (&lt; 1 Minggu)</option>
                     <option value="Segera (1 - 2 Minggu)">Segera (1 - 2 Minggu)</option>
@@ -216,7 +216,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                   placeholder="Contoh: Pengadaan 15 unit PC Workstation, instalasi 8 CCTV Outdoor untuk gudang, dan pasokan toner bulanan..."
                   value={formData.projectScope}
                   onChange={(e) => setFormData({ ...formData, projectScope: e.target.value })}
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400"
+                  className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#F5A623]"
                 />
               </div>
 
@@ -230,7 +230,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                 </button>
                 <button
                   type="submit"
-                  className="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20"
+                  className="px-5 py-2.5 rounded-xl bg-[#F5A623] hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-amber-500/20"
                 >
                   <Send className="w-3.5 h-3.5" />
                   <span>Kirim via WhatsApp Resmi</span>
@@ -256,7 +256,7 @@ Mohon dapat dihubungi kembali dengan estimasi penawaran resmi. Terima kasih.`;
                   setSubmitted(false);
                   onClose();
                 }}
-                className="px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs"
+                className="px-5 py-2.5 rounded-xl bg-[#F5A623] text-slate-950 font-bold text-xs"
               >
                 Kembali ke Profile
               </button>

@@ -9,8 +9,8 @@ export const AboutSection: React.FC = () => {
         
         {/* Section 01: Tentang Radcom */}
         <div>
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-            <span className="w-6 h-0.5 bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+            <span className="w-6 h-0.5 bg-[#F5A623]"></span>
             01 · Tentang Radcom
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -21,7 +21,7 @@ export const AboutSection: React.FC = () => {
           </p>
 
           {/* Quote Banner */}
-          <div className="my-8 p-6 rounded-2xl bg-gradient-to-r from-cyan-950/60 to-slate-800/80 border-l-4 border-cyan-400 text-slate-100 shadow-md">
+          <div className="my-8 p-6 rounded-2xl bg-gradient-to-r from-amber-950/40 to-slate-800/80 border-l-4 border-[#F5A623] text-slate-100 shadow-md">
             <p className="text-lg sm:text-xl font-bold italic">
               “Menjadi perusahaan pengadaan kebutuhan institusi terlengkap yang dapat mensupport semua kebutuhan kantor dengan service excellent.”
             </p>
@@ -30,7 +30,7 @@ export const AboutSection: React.FC = () => {
           {/* Two Column Narrative */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-7">
-              <div className="flex items-center gap-3 text-cyan-400 mb-4">
+              <div className="flex items-center gap-3 text-[#F5A623] mb-4">
                 <Compass className="w-5 h-5" />
                 <h3 className="text-xl font-bold text-white">Perjalanan Bisnis</h3>
               </div>
@@ -43,29 +43,29 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <div className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-7">
-              <div className="flex items-center gap-3 text-cyan-400 mb-4">
+              <div className="flex items-center gap-3 text-[#F5A623] mb-4">
                 <Target className="w-5 h-5" />
                 <h3 className="text-xl font-bold text-white">Posisi Radcom di Industri</h3>
               </div>
               <ul className="space-y-3 text-sm text-slate-300">
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                   <span>Partner pengadaan kebutuhan institusi, BUMN, dan korporasi swasta.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                   <span>Berawal dari spesialisasi mendalam di bidang Teknologi Informasi.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                   <span>Memiliki cakupan kebutuhan lintas kategori (One-stop procurement).</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                   <span>Mengutamakan standar mutu layanan, akurasi pengerjaan, dan kecepatan.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-[#F5A623] mt-0.5 flex-shrink-0" />
                   <span>Berorientasi murni pada solusi terukur sesuai anggaran pelanggan.</span>
                 </li>
               </ul>
@@ -76,7 +76,7 @@ export const AboutSection: React.FC = () => {
           <div className="mt-8 p-5 rounded-2xl bg-slate-800/40 border border-slate-700/60">
             <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
               <span>Kanal & Portal Pengadaan Resmi Terdaftar</span>
-              <span className="text-cyan-400 font-medium text-[11px]">LPSE · LKPP e-Katalog · PaDi UMKM BUMN · SIPLah Gramedia</span>
+              <span className="text-amber-400 font-medium text-[11px]">LPSE · LKPP e-Katalog · PaDi UMKM BUMN · SIPLah Gramedia</span>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
               {/* 01. LPSE */}
@@ -183,8 +183,8 @@ export const AboutSection: React.FC = () => {
 
         {/* Section 02: Visi, Misi & Nilai Kerja */}
         <div id="vision-mission" className="pt-10 border-t border-slate-800">
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-            <span className="w-6 h-0.5 bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+            <span className="w-6 h-0.5 bg-[#F5A623]"></span>
             02 · Arah Perusahaan
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -193,9 +193,9 @@ export const AboutSection: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8">
             {/* Visi Card */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-cyan-950/80 border border-cyan-500/30 rounded-2xl p-8 flex flex-col justify-between shadow-xl">
+            <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-amber-950/60 border border-amber-500/30 rounded-2xl p-8 flex flex-col justify-between shadow-xl">
               <div>
-                <span className="text-xs font-bold text-cyan-400 tracking-wider uppercase">VISI UTAMA</span>
+                <span className="text-xs font-bold text-[#F5A623] tracking-wider uppercase">VISI UTAMA</span>
                 <h3 className="text-2xl sm:text-3xl font-black text-white mt-3 leading-snug">
                   Pengadaan terlengkap dengan service excellent.
                 </h3>
@@ -203,39 +203,39 @@ export const AboutSection: React.FC = () => {
                   Menjadi perusahaan pengadaan kebutuhan institusi terlengkap yang dapat mensupport semua kebutuhan kantor dengan service excellent.
                 </p>
               </div>
-              <div className="pt-6 mt-6 border-t border-cyan-500/20 flex items-center gap-3">
-                <Award className="w-6 h-6 text-cyan-400" />
-                <span className="text-xs font-semibold text-cyan-300">Standar Kualitas & Kepuasan Pelanggan</span>
+              <div className="pt-6 mt-6 border-t border-amber-500/20 flex items-center gap-3">
+                <Award className="w-6 h-6 text-[#F5A623]" />
+                <span className="text-xs font-semibold text-amber-300">Standar Kualitas & Kepuasan Pelanggan</span>
               </div>
             </div>
 
             {/* Misi Card */}
             <div className="lg:col-span-7 bg-slate-800/60 border border-slate-700/60 rounded-2xl p-8">
-              <span className="text-xs font-bold text-sky-400 tracking-wider uppercase">MISI PERUSAHAAN</span>
+              <span className="text-xs font-bold text-amber-400 tracking-wider uppercase">MISI PERUSAHAAN</span>
               <h3 className="text-xl font-bold text-white mt-2 mb-4">Langkah Strategis Radcom</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs text-slate-300">
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">01. Grand Value</strong>
+                  <strong className="text-amber-300 block mb-1">01. Grand Value</strong>
                   Memberikan Grand Value dan dampak positif nyata bagi setiap organisasi rekanan.
                 </div>
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">02. Standar Mutu & Efisiensi</strong>
+                  <strong className="text-amber-300 block mb-1">02. Standar Mutu & Efisiensi</strong>
                   Berorientasi pada kepuasan pelanggan, standar mutu tinggi, kecepatan, dan efisiensi.
                 </div>
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">03. Integritas SDM</strong>
+                  <strong className="text-amber-300 block mb-1">03. Integritas SDM</strong>
                   Meningkatkan kualitas individu tim yang jujur, profesional, dan bermoral mulia.
                 </div>
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">04. Solusi TI Menyeluruh</strong>
+                  <strong className="text-amber-300 block mb-1">04. Solusi TI Menyeluruh</strong>
                   Memberikan solusi Teknologi Informasi secara menyeluruh sesuai dinamika kebutuhan.
                 </div>
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">05. Cepat & Tepat</strong>
+                  <strong className="text-amber-300 block mb-1">05. Cepat & Tepat</strong>
                   Memberikan layanan pengadaan secara cepat, responsif, dan tepat spesifikasi.
                 </div>
                 <div className="p-3 bg-slate-900/60 rounded-xl border border-slate-700/40">
-                  <strong className="text-cyan-300 block mb-1">06. Product Focus</strong>
+                  <strong className="text-amber-300 block mb-1">06. Product Focus</strong>
                   Menghadirkan layanan berbasis keunggulan produk sesuai kebutuhan pelanggan.
                 </div>
               </div>
@@ -249,8 +249,8 @@ export const AboutSection: React.FC = () => {
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {coreValues.map((v, i) => (
-                <div key={i} className="p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-cyan-500/40 transition-colors">
-                  <div className="text-cyan-400 font-bold text-base mb-1.5 flex items-center gap-2">
+                <div key={i} className="p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-amber-500/40 transition-colors">
+                  <div className="text-amber-400 font-bold text-base mb-1.5 flex items-center gap-2">
                     <Zap className="w-4 h-4" />
                     <span>{v.name}</span>
                   </div>
@@ -265,8 +265,8 @@ export const AboutSection: React.FC = () => {
 
         {/* Section 03: Model Bisnis */}
         <div id="business-model" className="pt-10 border-t border-slate-800">
-          <div className="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-widest mb-3">
-            <span className="w-6 h-0.5 bg-cyan-400"></span>
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+            <span className="w-6 h-0.5 bg-[#F5A623]"></span>
             03 · Model Bisnis
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -284,8 +284,8 @@ export const AboutSection: React.FC = () => {
                   idx === 0
                     ? 'bg-gradient-to-b from-slate-900 to-slate-800 border border-slate-700'
                     : idx === 1
-                    ? 'bg-gradient-to-b from-blue-950 to-slate-900 border border-blue-500/30'
-                    : 'bg-gradient-to-b from-cyan-950 to-slate-900 border border-cyan-500/30'
+                    ? 'bg-gradient-to-b from-amber-950/40 to-slate-900 border border-amber-500/30'
+                    : 'bg-gradient-to-b from-orange-950/40 to-slate-900 border border-orange-500/30'
                 }`}
               >
                 <div>
@@ -302,7 +302,7 @@ export const AboutSection: React.FC = () => {
                 <div className="pt-4 border-t border-slate-700/50 space-y-2">
                   {biz.features.map((feat, fidx) => (
                     <div key={fidx} className="flex items-center gap-2 text-xs text-slate-200">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#F5A623] flex-shrink-0" />
                       <span>{feat}</span>
                     </div>
                   ))}
@@ -320,10 +320,10 @@ export const AboutSection: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <span className="px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+              <span className="px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
                 One-Stop Solution
               </span>
-              <span className="px-3 py-1.5 rounded-lg bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold">
+              <span className="px-3 py-1.5 rounded-lg bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold">
                 SLA Garansi Resmi
               </span>
             </div>

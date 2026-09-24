@@ -58,43 +58,43 @@ export const Navbar: React.FC<NavbarProps> = ({
           <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
             <button 
               onClick={() => scrollToSection('about')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Tentang Kami
             </button>
             <button 
               onClick={() => scrollToSection('vision-mission')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Visi & Misi
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Lini Bisnis
             </button>
             <button 
               onClick={() => scrollToSection('projects')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Pengalaman Project
             </button>
             <button 
               onClick={() => scrollToSection('clients-partners')} 
-              className="hover:text-amber-400 text-amber-300 font-semibold transition-colors cursor-pointer"
+              className="hover:text-amber-300 text-amber-400 font-semibold transition-colors cursor-pointer"
             >
               Rekanan & Dealer
             </button>
             <button 
               onClick={() => scrollToSection('documentation')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Dokumentasi
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="hover:text-cyan-400 transition-colors cursor-pointer"
+              className="hover:text-amber-400 transition-colors cursor-pointer"
             >
               Kontak
             </button>
@@ -109,7 +109,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => onToggleView('web')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
                   currentView === 'web'
-                    ? 'bg-cyan-500 text-slate-950 shadow-sm'
+                    ? 'bg-[#F5A623] text-slate-950 font-bold shadow-sm'
                     : 'text-slate-400 hover:text-white'
                 }`}
                 title="Tampilan Web Modern"
@@ -122,7 +122,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => onToggleView('document')}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer ${
                   currentView === 'document'
-                    ? 'bg-cyan-500 text-slate-950 shadow-sm'
+                    ? 'bg-[#F5A623] text-slate-950 font-bold shadow-sm'
                     : 'text-slate-400 hover:text-white'
                 }`}
                 title="Tampilan Format Dokumen A4 / Print Ready"
@@ -136,7 +136,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               id="rfq-nav-btn"
               onClick={onOpenRfq}
-              className="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-cyan-400 hover:text-slate-950 transition-all cursor-pointer shadow-sm"
+              className="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-950 hover:bg-[#F5A623] hover:text-slate-950 transition-all cursor-pointer shadow-sm"
             >
               Minta Penawaran
             </button>
@@ -159,7 +159,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => onToggleView(currentView === 'web' ? 'document' : 'web')}
-              className="px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-cyan-400 flex items-center gap-1"
+              className="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 border border-slate-800 text-[#F5A623] flex items-center gap-1"
             >
               {currentView === 'web' ? <FileText className="w-3 h-3" /> : <Globe className="w-3 h-3" />}
               <span>{currentView === 'web' ? 'A4' : 'Web'}</span>
@@ -185,7 +185,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`flex-1 py-2 rounded-lg text-xs font-bold text-center ${
-                currentView === 'web' ? 'bg-cyan-500 text-slate-950' : 'bg-slate-800 text-slate-300'
+                currentView === 'web' ? 'bg-[#F5A623] text-slate-950' : 'bg-slate-800 text-slate-300'
               }`}
             >
               Web Interaktif
@@ -196,7 +196,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
               }}
               className={`flex-1 py-2 rounded-lg text-xs font-bold text-center ${
-                currentView === 'document' ? 'bg-cyan-500 text-slate-950' : 'bg-slate-800 text-slate-300'
+                currentView === 'document' ? 'bg-[#F5A623] text-slate-950' : 'bg-slate-800 text-slate-300'
               }`}
             >
               Dokumen A4 (PDF)
@@ -206,49 +206,49 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex flex-col gap-2.5 text-sm font-medium">
             <button
               onClick={() => scrollToSection('about')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Tentang Kami
             </button>
             <button
               onClick={() => scrollToSection('vision-mission')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Visi & Misi
             </button>
             <button
               onClick={() => scrollToSection('business-model')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Model Bisnis
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Lini Bisnis & Produk
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Pengalaman Project
             </button>
             <button
               onClick={() => scrollToSection('clients-partners')}
-              className="text-left py-2 text-amber-300 font-bold hover:text-amber-400"
+              className="text-left py-2 text-amber-400 font-bold hover:text-amber-300"
             >
               Rekanan & Dealer Resmi
             </button>
             <button
               onClick={() => scrollToSection('documentation')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Dokumentasi Pengadaan
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-left py-2 text-slate-300 hover:text-cyan-400"
+              className="text-left py-2 text-slate-300 hover:text-amber-400"
             >
               Kontak Perusahaan
             </button>
@@ -260,7 +260,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenRfq();
               }}
-              className="w-full py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold text-xs text-center"
+              className="w-full py-2.5 rounded-xl bg-[#F5A623] text-slate-950 font-bold text-xs text-center"
             >
               Minta Penawaran Pengadaan
             </button>

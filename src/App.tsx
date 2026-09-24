@@ -47,7 +47,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-[#F5A623] selection:text-slate-950">
       {currentView === 'document' ? (
         <A4DocumentView onBackToWeb={() => setCurrentView('web')} />
       ) : (
@@ -91,7 +91,7 @@ export default function App() {
             <button
               id="floating-doc-btn"
               onClick={() => setCurrentView('document')}
-              className="px-3.5 py-2.5 rounded-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs shadow-xl shadow-cyan-500/20 flex items-center gap-2 transition-all cursor-pointer"
+              className="px-3.5 py-2.5 rounded-full bg-[#F5A623] hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-xl shadow-amber-500/20 flex items-center gap-2 transition-all cursor-pointer"
               title="Buka Company Profile Format Cetak A4"
             >
               <FileText className="w-4 h-4" />

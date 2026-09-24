@@ -14,8 +14,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section id="hero" className="relative bg-slate-950 text-white overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
       {/* Dynamic Background Gradients */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 left-10 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 left-10 w-80 h-80 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-20 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -23,14 +23,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           
           {/* Main Hero Copy */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-semibold tracking-wider uppercase shadow-inner">
-              <Award className="w-3.5 h-3.5 text-cyan-400" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-950/40 text-amber-300 text-xs font-semibold tracking-wider uppercase shadow-inner">
+              <Award className="w-3.5 h-3.5 text-[#F5A623]" />
               <span>ESTABLISHED 2004 · 20+ TAHUN TERPERCAYA</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-none">
               One Partner.<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-[#F5A623]">
                 Many Solutions.
               </span>
             </h1>
@@ -44,7 +44,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <button
                 id="hero-request-btn"
                 onClick={onOpenRfq}
-                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-sm hover:from-cyan-400 hover:to-blue-500 transition-all shadow-lg shadow-cyan-500/25 flex items-center gap-2 cursor-pointer group"
+                className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#F5A623] to-amber-500 text-slate-950 font-bold text-sm hover:from-amber-400 hover:to-orange-500 transition-all shadow-lg shadow-amber-500/25 flex items-center gap-2 cursor-pointer group"
               >
                 <span>Ajukan Pengadaan</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -53,9 +53,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <button
                 id="hero-doc-btn"
                 onClick={onViewDocument}
-                className="px-5 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 hover:text-white hover:border-cyan-400/60 font-semibold text-sm transition-all flex items-center gap-2 cursor-pointer"
+                className="px-5 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 hover:text-white hover:border-amber-400/60 font-semibold text-sm transition-all flex items-center gap-2 cursor-pointer"
               >
-                <FileDown className="w-4 h-4 text-cyan-400" />
+                <FileDown className="w-4 h-4 text-[#F5A623]" />
                 <span>Buka Company Profile A4</span>
               </button>
 
@@ -75,15 +75,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Value Points */}
             <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-slate-400">
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <span>Service Excellent & SLA Terukur</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <span>Legalitas Resmi & Terdaftar</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <span>Dukungan Teknis Komprehensif</span>
               </div>
             </div>
@@ -95,10 +95,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               
               <div className="flex items-center justify-between pb-6 border-b border-slate-800">
                 <div>
-                  <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider">Ikhtisar Perusahaan</span>
+                  <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">Ikhtisar Perusahaan</span>
                   <h3 className="text-xl font-bold text-white mt-0.5">Solusi Pengadaan Terintegrasi</h3>
                 </div>
-                <div className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-lg text-xs font-semibold text-cyan-400">
+                <div className="px-3 py-1 bg-amber-500/10 border border-amber-500/30 rounded-lg text-xs font-semibold text-amber-400">
                   Resmi Sejak 2004
                 </div>
               </div>
@@ -106,7 +106,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* KPI 3 Columns */}
               <div className="grid grid-cols-3 gap-3 my-6">
                 <div className="bg-slate-800/60 rounded-xl p-3.5 text-center border border-slate-700/50">
-                  <div className="text-2xl font-black text-cyan-400">2004</div>
+                  <div className="text-2xl font-black text-[#F5A623]">2004</div>
                   <div className="text-[11px] text-slate-400 mt-1 font-medium">Tahun Berdiri</div>
                 </div>
                 <div className="bg-slate-800/60 rounded-xl p-3.5 text-center border border-slate-700/50">
@@ -114,7 +114,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <div className="text-[11px] text-slate-400 mt-1 font-medium">Pilar Bisnis</div>
                 </div>
                 <div className="bg-slate-800/60 rounded-xl p-3.5 text-center border border-slate-700/50">
-                  <div className="text-2xl font-black text-sky-400">360°</div>
+                  <div className="text-2xl font-black text-[#F5A623]">360°</div>
                   <div className="text-[11px] text-slate-400 mt-1 font-medium">Cakupan Solusi</div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-slate-400">Cakupan Layanan</span>
-                  <span className="font-semibold text-cyan-400">IT, CCTV, ATK, Cetak, Sipil</span>
+                  <span className="font-semibold text-[#F5A623]">IT, CCTV, ATK, Cetak, Sipil</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-slate-400">Klien Flagship</span>
@@ -141,7 +141,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </p>
                 <button
                   onClick={onOpenRfq}
-                  className="mt-2 text-xs font-bold text-cyan-400 hover:text-cyan-300 underline underline-offset-4 cursor-pointer"
+                  className="mt-2 text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4 cursor-pointer"
                 >
                   Kirim Kebutuhan Anda Sekarang &rarr;
                 </button>

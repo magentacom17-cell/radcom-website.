@@ -1,0 +1,8 @@
+<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='100' height='100' rx='18' fill='#FFFFFF'/>
+  <rect x='10' y='10' width='80' height='80' rx='12' fill='#059669'/>
+  <rect x='43' y='22' width='14' height='40' rx='3' fill='#FFFFFF'/>
+  <rect x='30' y='35' width='40' height='14' rx='3' fill='#FFFFFF'/>
+  <path d='M28 42 L38 42 L43 32 L49 52 L54 42 L60 42 L72 42' stroke='#F5A623' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  <text x='50' y='76' text-anchor='middle' font-size='8.5' font-weight='900' fill='#FFFFFF' font-family='system-ui, sans-serif' letter-spacing='0.5'>RS TRIA DIPA</text>
+</svg>

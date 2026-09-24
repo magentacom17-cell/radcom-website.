@@ -1,0 +1,9 @@
+<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='100' height='100' rx='18' fill='#FFFFFF'/>
+  <circle cx='50' cy='36' r='6' fill='#DC2626'/>
+  <path d='M36 40 C36 28 42 20 50 20 C58 20 64 28 64 40' stroke='#0284C7' stroke-width='3.5' stroke-linecap='round' fill='none'/>
+  <path d='M26 44 C26 24 36 12 50 12 C64 12 74 24 74 44' stroke='#0369A1' stroke-width='3.5' stroke-linecap='round' fill='none'/>
+  <polygon points='47,40 53,40 56,66 44,66' fill='#0F172A'/>
+  <text x='50' y='80' text-anchor='middle' font-size='11' font-weight='900' fill='#0F172A' font-family='system-ui, sans-serif' letter-spacing='0.8'>DANATEL</text>
+  <text x='50' y='89' text-anchor='middle' font-size='5.5' font-weight='700' fill='#64748B' font-family='system-ui, sans-serif'>TELEKOMUNIKASI</text>
+</svg>

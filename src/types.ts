@@ -78,6 +78,8 @@ export interface ClientPartner {
   name: string;
   category: 'government' | 'international' | 'enterprise' | 'banking' | 'hospitality' | 'property';
   highlight?: string;
+  domain?: string;
+  shortName?: string;
 }
 
 export interface BusinessModelStep {
